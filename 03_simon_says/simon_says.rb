@@ -23,16 +23,12 @@ def echo(word)
 end
 
 def repeat(word, number = 2)
-  result = ""
-  i = 0
-  number.times {
-    result += word
-    if i < number-1
-      result+=" "
-    end
-    i += 1
-  }
-  result
+  repeated_words = []
+  number.times do
+    repeated_words << word
+
+  end
+  repeated_words.join(" ")
 end
 
 def start_of_word(word, number_letters)
