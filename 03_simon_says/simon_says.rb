@@ -37,6 +37,6 @@ def start_of_word(word, number_letters)
 end
 
 def first_word(words)
-  split_words = words.gsub(/\s+/m, ' ').strip.split(" ")
+  split_words = words.split(" ")
   split_words[0]
 end
